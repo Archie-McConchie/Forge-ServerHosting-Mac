@@ -27,6 +27,16 @@ cd documents/minecraftserverfolder
 chmod a+x ./run.sh
 ./run.sh
 
+To add mods:
+1. Find and download a mod you like (remember it has to have the version) and make sure it is a jar file. Put the jar file into the mods folder created when you ran forge. Don't forget to install the mod locally on your computer too. You can do this my going to /Library/Application Support/minecraft/mods. If there isnt already a 'mods' folder, make one. Don't use a capital 'm' for mods. Put the jar file for the mod in this folder too. Everytime you want to run your server, you'll need to either run the 'run.sh' file or type ./run.sh in the terminal. Be aware for this to work, you'll need to be in the directory. 
+
 This should start the server.
 
 For 1.16.5 and below:
+1. Run the server.jar file.
+2. Change the eula to true by opening the text file and removing false. Make sure you make the 't' lowercase and that there isn't a space between the equal sign and true.
+3. Run the server.jar file again, your server should start up.
+
+To add mods:
+Joining:
+Using Optifine:
