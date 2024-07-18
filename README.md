@@ -17,4 +17,16 @@ Forge, on macOS:
 
 6. You'll now have to install forge on your server. The first thing you need to do is create a folder, you can create the folder anywhere, in your documents folder or in your downloads folder. It doesn't matter. You can name the folder whatever you like. Now follow the same steps as you did to install forge for the client except select 'Install Server' instead. You'll notice an error at the bottom of the window, to fix this change the directory to the directory of the folder and click install. If you get an error, run it again or make another folder. If these dont work, copy the error code and google it. When it is successful you should get a message pop up.
 
+7. Once installed, open the folder you created to begin with, if you installed forge for 1.16.5 or earlier, you will have three files in your folder. A forge jar file, a minecraft jar file and a libaries file. However if you downloaded forge for 1.17 or later then you will have a run.bat file, run.sh file, user_jvm_args.txt and a libaries folder.
 
+For 1.17 and above:
+1. Open terminal, and go to the directory of the run.bat file. For example, if my folder is located in my documents folder, then I type 'cd documents/minecraftserverfolder'. If your folder has a space in it's name you will need to use single quotation marks to inclose it. After this, write 'chmod a+x ./run.sh'. Finally enter,./run.sh to run the file.
+
+Example:
+cd documents/minecraftserverfolder
+chmod a+x ./run.sh
+./run.sh
+
+This should start the server.
+
+For 1.16.5 and below:
