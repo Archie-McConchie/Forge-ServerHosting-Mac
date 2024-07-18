@@ -23,9 +23,9 @@ For 1.17 and above:
 1. Open terminal, and go to the directory of the run.bat file. For example, if my folder is located in my documents folder, then I type 'cd documents/minecraftserverfolder'. If your folder has a space in it's name you will need to use single quotation marks to inclose it. After this, write 'chmod a+x ./run.sh'. Finally enter,./run.sh to run the file.
 
 Example:
-cd documents/minecraftserverfolder
-chmod a+x ./run.sh
-./run.sh
+1. cd documents/minecraftserverfolder
+2. chmod a+x ./run.sh
+3. ./run.sh
 
 To add mods:
 1. Find and download a mod you like (remember it has to have the version) and make sure it is a jar file. Put the jar file into the mods folder created when you ran forge. Don't forget to install the mod locally on your computer too. You can do this my going to /Library/Application Support/minecraft/mods. If there isnt already a 'mods' folder, make one. Don't use a capital 'm' for mods. Put the jar file for the mod in this folder too. Everytime you want to run your server, you'll need to either run the 'run.sh' file or type ./run.sh in the terminal. Be aware for this to work, you'll need to be in the directory. 
@@ -38,5 +38,11 @@ For 1.16.5 and below:
 3. Run the server.jar file again, your server should start up.
 
 To add mods:
+
+
 Joining:
+
+
 Using Optifine:
+
+
