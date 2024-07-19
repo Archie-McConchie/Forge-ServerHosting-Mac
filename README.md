@@ -1,4 +1,4 @@
-# Server-Hosting
+# Forge Server on Mac
 Learn how to safely host your own forge Minecraft server with mods on mac for your mates or for, anyone really. Learn how to keep yourself safe, and your IP and location hidden whilst your at it.
 
 Why do it yourself and not just pay for a server hoster?
