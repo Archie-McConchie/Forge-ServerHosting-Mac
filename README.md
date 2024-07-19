@@ -37,11 +37,25 @@ For 1.16.5 and below:
 2. Change the eula to true by opening the text file and removing false. Make sure you make the 't' lowercase and that there isn't a space between the equal sign and true.
 3. Run the server.jar file again, your server should start up.
 
-To add mods:
+In order to use forge, run the forge jar file in the same folder. You'll notice this won't work. You will need to create a sh file.
 
+1. Press command + space to use spotlight and type in 'textedit'.
+2. Write the following,
+("/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/bin/java" -server -Xmx6000M -Xms6000M -jar minecraft_server.1.12.2.jar nogui).
+3. Press command + s to save the file. Then navigate to the menu bar - (the bar at the top of your screen) and click format, and then make plain text.
+4. Drag this file into your server folder and make sure it is an SH file. If you don't know how to do this, google or use the .sh file linked above.
+5. In terminal, navigate to the folder (as shown in the 1.17 and up steps) and enter 'chmod a+x ./run.sh' and the './run.sh'.
+6. This should run your server.
+
+Please note that, the chmod command is only needed the first time as it allows the neccessary permissions, you might need to allow terminal full disk access, and older versions of minecraft such as 1.12.2 require older versions of java. So if the method isnt working, try installing Java 8 and 17 as well as the newest version.
+
+To add mods:
+1. Find the 'mods' folder in the folder you created and drop your mods in. Be sure you have the mods installed locally too. This can be done by creating a mods folder in the minecraft folder inside application support. You can find that inside of the library folder.
 
 Joining:
-
+Ngrok and perhaps noip
+other wise portforwding link
+sh file link
 
 Using Optifine:
 
