@@ -56,10 +56,25 @@ For 1.16.5 or older versions:
 To add mods, drop the jar files into the newly created mods folder in the server folder you created. Don't forget to install them locally.
 
 Joining:
-Ngrok and perhaps noip
-other wise portforwding link
-sh file link
+In order to join your minecraft server, you will need to be on the same wifi as the server and have the IP. This is highly impractical, and if you could join from somewhere else, people would have your ip address and then your location. So to prevent this you can use two services called Ngrok and NoIP. NoIP changes the ip address from some random numbers which no one can remember to a free memorable subdomain for example: 'myserver.ddns.net' The ddns.net part is compulsory unless you pay for a proper domain. Ngrok allows for your mates to connect when they aren't on the same wifi and it passes through servers in sydney meaning the IP address you give to people can't be tracked back to your location allowing you to safely host your server for anyone.
+
+Setting up Ngrok.
+1. Google Ngrok and sign up.
+2. You will need to add your debit/credit card as identifcation for your account. It will not be charged. To do this go to settings and then account on the side bar.
+3. If you know your IP adress, then great. However if you dont, go to settings, then wifi, then details (to the left of the wifi your connected to) and click on TCP/IP. You will see your ip address there.
+4. Go back to the Ngrok dash board and follow the instructions on how to install the service and add your authtoken.
+5. Next, go to terminal and the your folders diretory and type the following: ./ngrok tcp 'yourIP':25565. This should run NGROK.
+6. At the bottom of the page you should see: Forwarding. Forwarding: tcp://0.tcp.au.ngrok.io:14132 -> 'yourIP':25565.
+7. The '0.tcp.au.ngrok.io' and ':14132' parts are the important bits.
+8. Use a domain to IP address converter to find the IP address of the domain.
+https://domaintoipconverter.com
+9. Put the port after the IP. For example: the IP could be 3.24.145.55. You would put 3.24.145.55:14132 and that would be your server IP. Anyone will be able to join your server with this. The port at the end will also change.
+10. Keep in mind that the IP address: 3.24.145.55 changes and that you have to run Ngrok everytime you boot the server and leave it open. Just create a new window for terminal and run the server that way.
+
+Using the NoIP service. 
+
+Now that you have a working server and an IP, you might get tired of typing in long numbers. You can use NoIP to change the IP of the domain for example 3.24.145.55 to a subdomain for example 'myserver.ddns.net'. Which is much easier typed. Keep in mind you can only do this for the domain and will have to add the port after this IP address. For example 'myserver.ddns.net:14132'.
 
 Using Optifine:
-
+To install optifine, google and download the jar file. To run optifine without mods or forge, run the jar file and click install. If you want optifine with forge, drop the jar file into the mods file in the minecraft folder inside of application suppport. Keep in mind optifine is a client mod and you won't need it on the server.
 
