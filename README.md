@@ -1,5 +1,5 @@
 # Server-Hosting
-Learn how to safely host your own Minecraft server with or without paper, quilt, neoforge, forge, bukkit and spigot mods on any operating system for your mates or for, anyone really. Learn how to keep yourself safe, and your IP and location hidden whilst your at it.
+Learn how to safely host your own forge Minecraft server with mods on mac for your mates or for, anyone really. Learn how to keep yourself safe, and your IP and location hidden whilst your at it.
 
 Why do it yourself and not just pay for a server hoster?
 Well, for one this is free, but two, you have no restrictions, this way is highly customisable meaning you can invite as many players as you like or put whatever mods you want on your server. All of this ran on your own spare computer, or if you don't have a spare computer, on your main computer.
@@ -76,5 +76,5 @@ Using the NoIP service.
 Now that you have a working server and an IP, you might get tired of typing in long numbers. You can use NoIP to change the IP of the domain for example 3.24.145.55 to a subdomain for example 'myserver.ddns.net'. Which is much easier typed. Keep in mind you can only do this for the domain and will have to add the port after this IP address. For example 'myserver.ddns.net:14132'.
 
 Using Optifine:
-To install optifine, google and download the jar file. To run optifine without mods or forge, run the jar file and click install. If you want optifine with forge, drop the jar file into the mods file in the minecraft folder inside of application suppport. Keep in mind optifine is a client mod and you won't need it on the server.
+To install optifine, google and download the jar file. To run optifine without mods or forge, run the jar file and click install. If you want optifine with forge, drop the jar file into the mods file in the minecraft folder inside of application suppport. Keep in mind optifine is a client mod and you won't need it on the server. The optifine jar file for 1.20.1 is linked above.
 
