@@ -15,42 +15,45 @@ Forge, on macOS:
 
 5. You are now ready to install forge on your system with the first file you downloaded. Run the file, a box asking if you want to install forge for your client or server should pop up. Just ignore the other options as you won't need them for this. In order for a modded server with forge to work, the server and all the players must have forge and the mods installed on their own computers. If you didnt know, the client is your computer and the server is the computer your running the server off of. In order to install forge for the client, you will need to have minecraft installed. Note you won't need to have curseforge installed. Select the client and install forge if you havn't already, you don't need to worry about the directory at the bottom of the window, it should be set correctly automatically. If it isn't, navigate to (/Users/'your username'/Library/Application Support/minecraft) and install it there. Make sure your minecraft and launcher are closed whilst you do this otherwise it might not work. You can also improve your performance by installing optifine, however we'll cover that at the end.
 
+1.17 and above, scroll down for older versions.
+
 6. You'll now have to install forge on your server. The first thing you need to do is create a folder, you can create the folder anywhere, in your documents folder or in your downloads folder. It doesn't matter. You can name the folder whatever you like. Now follow the same steps as you did to install forge for the client except select 'Install Server' instead. You'll notice an error at the bottom of the window, to fix this change the directory to the directory of the folder and click install. If you get an error, run it again or make another folder. If these dont work, copy the error code and google it. When it is successful you should get a message pop up.
 
 7. Once installed, open the folder you created to begin with, if you installed forge for 1.16.5 or earlier, you will have three files in your folder. A forge jar file, a minecraft jar file and a libaries file. However if you downloaded forge for 1.17 or later then you will have a run.bat file, run.sh file, user_jvm_args.txt and a libaries folder.
 
-For 1.17 and above:
-1. Open terminal, and go to the directory of the run.bat file. For example, if my folder is located in my documents folder, then I type 'cd documents/minecraftserverfolder'. If your folder has a space in it's name you will need to use single quotation marks to inclose it. After this, write 'chmod a+x ./run.sh'. Finally enter,./run.sh to run the file.
+8. Open terminal, and go to the directory of the run.bat file. For example, if my folder is located in my documents folder, then I type 'cd documents/minecraftserverfolder'. If your folder has a space in it's name you will need to use single quotation marks to inclose it. After this, write 'chmod a+x ./run.sh'. Finally enter, './run.sh to run the file'.
 
 Example:
 1. cd documents/minecraftserverfolder
 2. chmod a+x ./run.sh
 3. ./run.sh
 
+Your server should start running with the mods installed. Type 'stop' in the terminal to stop the server.
+
 To add mods:
 1. Find and download a mod you like (remember it has to have the version) and make sure it is a jar file. Put the jar file into the mods folder created when you ran forge. Don't forget to install the mod locally on your computer too. You can do this my going to /Library/Application Support/minecraft/mods. If there isnt already a 'mods' folder, make one. Don't use a capital 'm' for mods. Put the jar file for the mod in this folder too. Everytime you want to run your server, you'll need to either run the 'run.sh' file or type ./run.sh in the terminal. Be aware for this to work, you'll need to be in the directory. 
 
-This should start the server.
+This should start the server, skip to the joining section of this article to see how you and your friends can join.
 
-For 1.16.5 and below:
-1. Run the server.jar file.
-2. Change the eula to true by opening the text file and removing false. Make sure you make the 't' lowercase and that there isn't a space between the equal sign and true.
-3. Run the server.jar file again, your server should start up.
+For 1.16.5 or older versions:
 
-In order to use forge, run the forge jar file in the same folder. You'll notice this won't work. You will need to create a sh file.
+6. Google '1.16.5 minecraft server' and click on the first link. Scroll down and click on the 'minecraft server.jar' file and download it.
+7. Make a new folder and call it whatever you want, but put it somewhere you can find it.
+8. Drag the jar you just downloaded into the folder, rename it to server, and make a new text file called start. In the file, write the following:
+ ("/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/bin/java" -Xmx8192M -Xms8192M -jar server.jar nogui)
+9. The numbers represent how much ram you use, never use more than half your computers ram. 🐑 🐏 Xms is the minimum and Xmx is the maximum. M is for megabytes.
+10. Note that the directory could be different so check.
+11. Save the text file, and on the top menu bar, click format and then make plain text. Close the file.
+12. Rename the file from a .txt to a .sh.
+13. Run the sh file the same way you would for 1.17 (follow the instructions above).
+14. Open the newly created EULA file and change false to true (assuming you agree with the eula).
+15. Run the sh file again. The server should start. This is a vanilla server. Stop the server by typing stop in the console of the world or by closing terminal.
+16. In order to make the server forge, reopen the forge installer jar file you previously donwloaded and run it.
+17. Select 'Install Server' and change the directory to the folder you created. Then press install.
+18. Once successful, open your folder and delete the first jar file you renamed. Then edit your sh file and change server.jar to the name of the new jar file. It should be something similar to minecraft_server1.12.2.jar.
+19. Run the sh file in terminal by going to the directory of the folder, and typing chmod a+x ./start.sh and then ./start.sh. You will only have to write the chmod command the first time. Now, everytime you want to run your server, type that command: ./start.sh. (Scroll up for instructions on how to enter the directory in terminal).
 
-1. Press command + space to use spotlight and type in 'textedit'.
-2. Write the following,
-("/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/bin/java" -server -Xmx6000M -Xms6000M -jar minecraft_server.1.12.2.jar nogui).
-3. Press command + s to save the file. Then navigate to the menu bar - (the bar at the top of your screen) and click format, and then make plain text.
-4. Drag this file into your server folder and make sure it is an SH file. If you don't know how to do this, google or use the .sh file linked above.
-5. In terminal, navigate to the folder (as shown in the 1.17 and up steps) and enter 'chmod a+x ./run.sh' and the './run.sh'.
-6. This should run your server.
-
-Please note that, the chmod command is only needed the first time as it allows the neccessary permissions, you might need to allow terminal full disk access, and older versions of minecraft such as 1.12.2 require older versions of java. So if the method isnt working, try installing Java 8 and 17 as well as the newest version.
-
-To add mods:
-1. Find the 'mods' folder in the folder you created and drop your mods in. Be sure you have the mods installed locally too. This can be done by creating a mods folder in the minecraft folder inside application support. You can find that inside of the library folder.
+To add mods, drop the jar files into the newly created mods folder in the server folder you created. Don't forget to install them locally.
 
 Joining:
 Ngrok and perhaps noip
